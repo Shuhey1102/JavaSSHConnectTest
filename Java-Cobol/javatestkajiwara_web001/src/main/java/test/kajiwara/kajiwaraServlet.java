@@ -49,19 +49,19 @@ public class kajiwaraServlet extends HttpServlet {
 	            switch (selectedOption) {
 	                case "1":
 	                    // Sync(JCL Success)
-	                	response.getWriter().append("Return_Code : " + processJCL.processSSH("D:\\WA_FTP\\_wk\\execJCLProcess.ps1","D:\\WA_FTP\\_wk\\","execSample1.ps1",false));
+	                	response.getWriter().append("Return_Code : " + processJCL.processSSH("D:\\_wk\\execJCLProcess.ps1","D:\\_wk\\","execSample1.ps1",false));
 	        			break;
 	                case "2":
 	                    // Sync(JCL Error)
-	                	response.getWriter().append("Return_Code : " + processJCL.processSSH("D:\\WA_FTP\\_wk\\execJCLProcess.ps1","D:\\WA_FTP\\_wk\\","execSample2.ps1",false));
+	                	response.getWriter().append("Return_Code : " + processJCL.processSSH("D:\\_wk\\execJCLProcess.ps1","D:\\_wk\\","execSample2.ps1",false));
 	                    break;
 	                case "3":
 	                    // Async(JCL Success)
-	                	response.getWriter().append("Return_Code : " + processJCL.processSSH("D:\\WA_FTP\\_wk\\execJCLProcess.ps1","D:\\WA_FTP\\_wk\\","execSample1.ps1",true));
+	                	response.getWriter().append("Return_Code : " + processJCL.processSSH("D:\\_wk\\execJCLProcess.ps1","D:\\_wk\\","execSample1.ps1",true));
 	                    break;
 	                case "4":
 	                    // Async(JCL Error)
-	                	response.getWriter().append("Return_Code : " + processJCL.processSSH("D:\\WA_FTP\\_wk\\execJCLProcess.ps1","D:\\WA_FTP\\_wk\\","execSample2.ps1",true));
+	                	response.getWriter().append("Return_Code : " + processJCL.processSSH("D:\\_wk\\execJCLProcess.ps1","D:\\_wk\\","execSample2.ps1",true));
 	                    break;
 	                default:
 	                    response.getWriter().append("Invalid option selected");
