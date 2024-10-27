@@ -6,7 +6,7 @@
 */bin/*
 */build/*
 
-sshConfig.properties
+*.properties
 
 # Other files to ignore
 *.swp
